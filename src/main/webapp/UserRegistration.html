@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>User Registration Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="./style1.css">
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div id="create-account-wrap1">
+		<div>
+			<form action="UserServelet" method="get" id="reg-form">
+				<div>
+					<h1 align="center">User Registration Form</h1>
+				</div>
+				<div>
+					<div>
+						<label>Name :</label> <input type="text" class="form-control" name="uName"
+							placeholder="Enter Your Full Name" required><i class="validation1"></i>
+
+					</div>
+				</div>
+				<div>
+					<div>
+						<label>Roll No:</label> <input type="text" class="form-control" name="uRNo"
+							placeholder="Enter Your 7 digit Roll No" maxlength="7" required><i class="validation1"></i>
+					</div>
+				</div>
+				<br> <br>
+				<div>
+
+					<label>Class :</label><i class="validation1"></i> <input type="Radio" name="uClass" Required
+						value="MCA"> MCA <input type="Radio" name="uClass" Required value="MBA"> MBA
+
+				</div>
+				<br> <br>
+				<div>
+
+					<label>Vehicle Type: <i class="validation1"></i></label>
+					<select name="vType" style="font-size:15px; padding:6px" required>
+						<option value="" disabled selected>Select Your Vehicle
+							Type</option>
+						<option value="Two Wheeler">Two Wheeler</option>
+						<option value="Four Wheeler">Four Wheeler</option>
+					</select>
+				</div>
+				<br>
+				<div>
+
+					<label>Vehicle No:</label> <input type="text" class="form-control" name="vNo" maxlength="10"
+						placeholder="Enter complete vehicle No" required><i class="validation"></i>
+
+				</div>
+				<div>
+
+					<label>Email Id:</label> <input type="email" class="form-control" name="emId"
+						placeholder="abc@email.com" required><i class="validation"></i>
+
+				</div>
+				<div>
+
+					<label>Contact No:</label> <input type="text" class="form-control" placeholder="Mobile Number"
+						name="cNo" maxlength="10" required><i class="validation"></i>
+
+				</div>
+				<div>
+
+					<label>Password:</label> <input type="password" class="form-control" name="pass"
+						placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+						title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+						required><i class="validation"></i>
+
+				</div>
+				<br>
+				<div>
+					<label><input type="reset" value="Clear"></label>
+					<label><input type="submit" value="SignUp"><i class="validation"></i></label>
+				</div>
+				<br>
+				<!-- 				<div style ="text-align:center; background-color: #eeedf1; color: #8a8b8e;font-size: 20px; -->
+				<!--  							 width: 90%; padding: 10px 0; border-radius: 0 0 4px 4px; height: 60%; "> -->
+				<!-- 			<p> -->
+				<!-- 				Already Account? <a href="LandingPage.html">Log In</a><br> -->
+				<!-- 			<p> -->
+				<!-- /div -->
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
